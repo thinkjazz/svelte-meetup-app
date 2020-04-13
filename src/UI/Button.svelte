@@ -1,6 +1,8 @@
 <script>
     export let type;
     export let caption;
+    export let href;
+    export let mode;
 </script>
 <style>
     button,
@@ -58,13 +60,13 @@
 
     .outline:hover,
     .outline:active {
-        background: #ffc7de;
+        background: #fff1c7;
         box-shadow: none;
     }
 
     .outline:disabled,
     .outline:disabled:hover,
-    .outline:disabled:active {
+    .outline:disabled:active {igt g
         background: transparent;
         color: #ccc;
     }
@@ -80,4 +82,8 @@
     }
 
 </style>
-<button type={type}>{caption}</button>
+{#if href === true}
+    <a href="{href}">{caption}</a>
+    {:else}
+<button class="{mode}" type={type}>{caption}</button>
+{/if}
