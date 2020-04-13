@@ -2,6 +2,7 @@
   import Header from "./UI/Header.svelte";
   import MeetupGrid from "./Meetups/MeetupGrid.svelte";
   import TextInput from './UI/TextInput.svelte';
+  import Button from './UI/Button.svelte';
   
   let title = '';
   let subtitle = '';
@@ -42,7 +43,7 @@
       address:address,
       contactEmail: email
     };
-    meetups = [...meetups, newMeetup]
+    meetups = [newMeetup, ...meetups]
   }
 </script>
 <style>
@@ -61,19 +62,19 @@
 <main>
   <form on:submit|preventDefault={addMeetup}>
       <TextInput id="title"
-                 label="Title"
+                 label="Заголовок"
                  value={title}
                  type="text"
                  on:input={(event) => title = event.target.value}
     />
      <TextInput id="subtitle"
-                label="Subtitle"
+                label="Подзаголовок"
                 value={subtitle}
                 type="text"
                 on:input={(event) => subtitle = event.target.value}
      />
     <TextInput id="address"
-               label="Address"
+               label="Адрес"
                value={address}
                type="text"
                on:input={(event) => address = event.target.value}
@@ -91,12 +92,12 @@
              on:input={(event) => email = event.target.value}
   />                                                               
    <TextInput id="description"
-              label="Description"
+              label="Описание"
               value={description}
               controlType="textarea"
               on:input={(event) => description = event.target.value}
    />
-    <button type="submit">Save</button>
+    <Button type="submit" caption="Сохранить"/>
    </form>
     <MeetupGrid {meetups}/>
 </main>
