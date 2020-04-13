@@ -16,7 +16,7 @@
       id: 1,
       title: 'Coding bootcamp',
       subtitle: "Learign svelte",
-      description: 'Hey this  is description. Un this meetup. We will have some expert opinion',
+      description: 'Hey this  is description. Un this meetup. We will have some experts opinion. And something we hade better or worst',
       urlImage: 'https://www.codingdojo.com/blog/wp-content/uploads/coding-bootcamps-vs-cs-degrees.png',
       address: '27 Los Robles, 22133 Pasadena',
       contactEmail: "code@code.com"
