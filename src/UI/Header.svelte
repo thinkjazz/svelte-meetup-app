@@ -20,5 +20,5 @@
 </style>
 
 <header>
-  <h1>MeetUs</h1>
+  <h1>Митапы</h1>
 </header>

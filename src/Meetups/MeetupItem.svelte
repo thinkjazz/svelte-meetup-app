@@ -77,8 +77,8 @@
 
     </div>
     <footer>
-        <a href="mailto:{email}">Contact</a>
-    <button>Show Detail</button>
-    <button>Favorite</button>
+        <a href="mailto:{email}">Контакты</a>
+    <button>Показать подробнее</button>
+    <button>Избранное</button>
     </footer>
 </article>
