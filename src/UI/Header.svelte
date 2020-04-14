@@ -20,5 +20,5 @@
 </style>
 
 <header>
-  <h1>Митапы</h1>
+  <h1>Meetup App</h1>
 </header>
