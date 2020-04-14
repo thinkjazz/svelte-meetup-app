@@ -66,7 +66,7 @@
 
     .outline:disabled,
     .outline:disabled:hover,
-    .outline:disabled:active {igt g
+    .outline:disabled:active {
         background: transparent;
         color: #ccc;
     }
