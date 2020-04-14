@@ -45,6 +45,6 @@
     <textarea {rows} {id} {value} on:input/>
 
 {:else}
-    <input type="{type}" {id} {value} on:input/>
+    <input type="{type}npm" {id} {value} on:input/>
 {/if}
     </div>
